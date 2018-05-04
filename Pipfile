@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+requests = "*"
+numpy = "*"
+pandas = "*"
+uwsgi = "*"
+jsonify = "*"
+
+[dev-packages]
+"flake8" = "*"
+"autopep8" = "*"
+
+[requires]
+python_version = "3.6"
+
+[scripts]
+start = "python app.py"
+lint = "flake8 ."
+fix = "autopep8 -ivr ."
